@@ -14,30 +14,27 @@
 Задание 2.5.
 Напишите программу-калькулятор, которая принимает два числа и оператор (в формате str), производит заданное арифметическое действие и печатает результат в формате: {num1} {operator) {num2) = {result}
 '''
-# #Task 2.1
-# health = int(input("Input character health: "))
-# if health <= 0:
-#     print('False')
-# else:
-#     print("True")
+#Task 2.1
+health = int(input("Input character health: "))
+print(health> 0)
 
-# #Task 2.2
-# number= int(input("Input number: "))
-# if (((number%2)==0) and (number!=0)):
-#     print("Четное")
-# else: print("Нечетное")
+#Task 2.2
+number= int(input("Input number: "))
+if (((number%2)==0) and (number!=0)):
+    print("Четное")
+else: print("Нечетное")
 
-##Task 2.3
-# year= int(input("Input year: "))
-# if ((year%400==0) or ((year%4==0) and (year%100!=0))):
-#     print("Високосный")
-# else: print("Не Високосный")
+#Task 2.3
+year= int(input("Input year: "))
+if ((year%400==0) or ((year%4==0) and (year%100!=0))):
+    print("Високосный")
+else: print("Не високосный")
 
-##Task 2.4
-# text= input('Enter text: ')
-# number= int(input('Enter number of lines: '))
-# for i in range (number):
-#     print(text)
+#Task 2.4
+text= input('Enter text: ')
+number= int(input('Enter number of lines: '))
+for i in range (number):
+    print(text)
 
 #Task 2.5
 num1,num2=int(input("Введите число 1: ")),int(input("Введите число 2: "))
