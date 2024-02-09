@@ -34,7 +34,7 @@
 # else: print("Не Високосный")
 
 ##Task 2.4
-# text= input('Enter test: ')
+# text= input('Enter text: ')
 # number= int(input('Enter number of lines: '))
 # for i in range (number):
 #     print(text)
