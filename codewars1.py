@@ -6,8 +6,7 @@ Can you help her?'''
 def greet(name):
     if name == "Johnny":
         return "Hello, my love!"
-    else:
-        return "Hello, {name}!".format(name=name)
+    return "Hello, {name}!".format(name=name)
 
 
 # 2
@@ -82,6 +81,7 @@ def basic_op(operator, value1, value2):
         return value1 / value2
     elif operator == '*':
         return value1 * value2
+    return f'Invalid operator {operator}'
 
 
 '''6
@@ -99,11 +99,10 @@ def sum_mul(n, m):
     i=1
     if (m<=0 or n<=0):
         return ("INVALID")
-    else:
-        while n*i<m:
-            mul+=n*i
-            i+=1
-        return mul
+    while n*i<m:
+        mul+=n*i
+        i+=1
+    return mul
 
 '''7
 Bob needs a fast way to calculate the volume of a cuboid with three values: 
@@ -125,8 +124,7 @@ If the number of the characters in name is less than or equal to two,
 it will return an array containing only the name as is"'''
 def who_is_paying(name):
     if len(name)<=2: return [name]
-    else:
-        return [name,name[:2]]
+    return [name,name[:2]]
 
 '''9
 In this kata you will create a function that takes in a list and returns a list with the reverse order.'''
@@ -154,7 +152,7 @@ def enough(cap, on, wait):
 '''
 def enough(cap, on, wait):
     if cap< on+wait: return on+wait-cap
-    else: return 0
+    return 0
 
 '''11
 Write a function which converts the input string to uppercase.
