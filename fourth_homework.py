@@ -23,12 +23,9 @@ def square(side):
 
 # Task 4.2
 
-@execution_time
 def printing(**kwargs):
     for k,v in kwargs.items():
         print(f'{k}:{v}')
-
-printing(last_name='Popov', name='Max', age=40, position='web developer')
 
 # Task 4.3
 my_list = [20, -3, 15, 2, -1, -21]
@@ -40,8 +37,8 @@ my_list = [20, -3, 15, 2, -1, -21]
 p = reduce((lambda x, y: x * y), my_list)
 
 # Task 4.5
+import time
 def execution_time(func):
-    import time
     def wrapper(**kwargs):
         start_time=time.perf_counter()
         print(f'Start time: {start_time}')
@@ -51,11 +48,11 @@ def execution_time(func):
         print(f'Elapced_time={end_time-start_time}')
     return wrapper
 @execution_time
-def printing(**kwargs):
+def printing_wrapped(**kwargs):
     for k,v in kwargs.items():
         print(f'{k}:{v}')
 
-printing(last_name='Popov', name='Max', age=40, position='web developer')
+printing_wrapped(last_name='Popov', name='Max', age=40, position='web developer')
 
 # Task 4.6
 from my_calc import *
