@@ -29,7 +29,7 @@
 
 # Task 3.1
 my_list = ['a', 'b', [1, 2, 3], 'd']
-print(my_list[2])
+print(*my_list[2])
 
 # Task 3.2
 list_1 = ['Hi', 'ananas', 2, 75, 'pizza', 36, 100]
