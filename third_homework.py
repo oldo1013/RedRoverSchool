@@ -29,7 +29,7 @@
 
 # Task 3.1
 my_list = ['a', 'b', [1, 2, 3], 'd']
-print(my_list[2])
+print(*my_list[2])
 
 # Task 3.2
 list_1 = ['Hi', 'ananas', 2, 75, 'pizza', 36, 100]
@@ -64,9 +64,7 @@ print(film.items())
 
 # Task 3.6
 my_dictionary = {'num1': 375, 'num2': 567, 'num3': -37, 'num4': 21}
-result=0
-for i in my_dictionary.values():
-    result+=i
+result=sum(my_dictionary.values())
 print(result)
 
 # Task 3.7
