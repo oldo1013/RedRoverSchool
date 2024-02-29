@@ -19,8 +19,3 @@ class Dog(Animal):
 dog_1= Dog('Corgi','Golden','£2000')
 print(dog_1.bark())
 print (dog_1.get_price())
-
-
-
-
-
